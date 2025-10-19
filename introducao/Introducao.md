@@ -22,3 +22,11 @@
 - Um algoritmo não recursivo equivalente pode ser mais eficiente.
 
 ## Complexidade de Algoritmos
+
+- Para exprimir a complexidade de um algoritmo usa-se comumente a notação Big (O), como o interesse é restrito a valores assintóticos (maiores possíveis), termos de menor grau podem ser desprezados.
+
+- Propriedades úteis:
+(i) O(g + h) = O(g) + O(h)
+(ii) O(k . g) = k . O(g)
+
+Como a variável independente é o valor n, conclui-se que as complexidades de pior, médio e melhor caso são todas iguais entre si para cada algoritmo.
