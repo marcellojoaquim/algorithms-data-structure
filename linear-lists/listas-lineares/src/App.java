@@ -3,10 +3,12 @@ public class App {
     public static ListaMethods listaMethods = new ListaMethods();
 
     public static void main(String[] args) throws Exception {
-        
+        int x = 4;
+        int n = 10;
+
         // Criacao dos Nos
 
-        No[] l = new No[10];
+        No[] l = new No[n];
         No n0 = new No(0, "no zero", "zero");
         No n2 = new No(2, "no dois", "dois");
         No n5 = new No(5, "no cinco", "cinco");
@@ -33,9 +35,24 @@ public class App {
 
         // Execucao do algoritmo
 
-        int x = 4;
+       
         int resultBusca1 = listaMethods.busca1(x, l);
-        int resultBusca2 = listaMethods.busca2(x, l);
+
+        No[] l2 = new No[n+1];
+        l2[0] = n0;
+        l2[1] = n6;
+        l2[2] = n9;
+        l2[3] = n8;
+        l2[4] = n5;
+        l2[5] = n4;
+        l2[6] = n1;
+        l2[7] = n7;
+        l2[8] = n3;
+        l2[9] = n2;
+        l2[n] = new No(101, "Sentinela", "end N");
+
+
+        int resultBusca2 = listaMethods.busca2(4, l2, n);
 
         System.out.println(resultBusca1);
         System.out.println(resultBusca2);

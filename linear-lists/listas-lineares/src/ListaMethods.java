@@ -1,6 +1,6 @@
 public class ListaMethods {
 
-  //Para cada elemento na busca o algoritmo realiza dois testes: i <= n e l[i].getChave() == x
+  // Para cada elemento na busca o algoritmo realiza dois testes: i <= n e l[i].getChave() == x
   public int busca1(int x, No[] l) {
         int i = 0;
         while (i <= l.length) {
@@ -13,17 +13,22 @@ public class ListaMethods {
     }
 
 
-  //
-  public int busca2(int x, No[] l) {
+  // Neste algoritmo que faz exatamento a mesma operação que o busca1 temos uma estratégia diferente com o uso de sentinela,
+  // removendo a validação de final de lista.
+  public int busca2(int x, No[] l, int tam) {
+    
     int i = 0;
-    No no = new No(x, "Novo no", "novo endereco");
+    l[tam].setChave(x);
+
     while (l[i].getChave() != x) {
-      if(i == l[i].getChave()){
-        return l[i].getChave();
-      }
       i++;
     }
-    return no.getChave();
+
+    if(i != tam) {
+      return i;
+    } else {
+      return -1;
+    }
   }
 
 }

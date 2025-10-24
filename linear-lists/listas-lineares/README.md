@@ -37,5 +37,7 @@ A maneira mais simples de manter uma lista linear na memória do computador é a
 - Cada nó possui um identificador chave, todas as chaves devem ser distintas.
 
 A implementacao de um nó está na classe No
-As implementações dos algoritmos lista1 e lista2 estão na classe ListaMethods
+As implementações dos algoritmos busca1 e busca2 estão na classe ListaMethods
+
+- busca1 e busca2 
 
