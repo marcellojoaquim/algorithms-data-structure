@@ -18,3 +18,24 @@ Outras operações:
 - Determinação da cardinalidade
 
 Casos particulares:
+
+- Se inserções e remoções são permitidas apenas nas extremidades a lista recebe o nome de Deque (double ended queue)
+- Se inserções e remoções são permitidas apenas em um extremo, ela é chamada de pilha
+- Se inserções são realizadas em um extremo e remoção no outro extremo, ela é chamada fila
+
+## Armazenamento
+
+O tipo de armazenamento é classificado de acordo com a posição relativa na memória de dois nós consecutivos na lista.
+
+### Alocação sequencial
+A maneira mais simples de manter uma lista linear na memória do computador é alocar os nós em posições contíguas, o endereço do nó n+1 da lista se encontra x unidades adiante de n+1.
+- A implementação de alocação sequencial em linguagens de alto nível é geralmente realizada com a reserva prévia de memória para cada estrutura utilizada.
+- O armazenamento sequencial é uma boa escolha para o caso de filas e pilhas.
+
+#### Listas lineares em alocação sequencial
+- Cada nó é formado por campos que armazenam informações que são os elementos da lista.
+- Cada nó possui um identificador chave, todas as chaves devem ser distintas.
+
+A implementacao de um nó está na classe No
+As implementações dos algoritmos lista1 e lista2 estão na classe ListaMethods
+
