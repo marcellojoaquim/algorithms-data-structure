@@ -40,4 +40,9 @@ A implementacao de um nó está na classe No
 As implementações dos algoritmos busca1 e busca2 estão na classe ListaMethods
 
 - busca1 e busca2 
+O algoritmo busca1 para cada elemento na busca, são realizados dois testes i <= n e l[i].getChave() == x
+Já o algoritmo busca2 utiliza a estratégia de otimização atraves de sentinela, neste caso eliminamos uma das validações adicioanando 
+o elemento com valor buscado ao final do algoritmo, evitando assim o teste de final de lista.
+- A complexidade de pior caso para ambos os algoritmos é O(n) porém o segundo tem uma execução mais rápida.
+
 
