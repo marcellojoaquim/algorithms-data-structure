@@ -31,4 +31,19 @@ public class ListaMethods {
     }
   }
 
+  public int buscaOrd(int x, No[] l, int tam) {
+    
+    int i = 0;
+    l[tam].setChave(x);
+    
+    while (l[i].getChave() < x) {
+      i++;  
+    }
+    if (i == tam || l[i].getChave() != x) {
+      return 0; 
+    } else {
+      return i;
+    }
+  }
+
 }

@@ -8,7 +8,7 @@ public class App {
 
         // Criacao dos Nos
 
-        No[] l = new No[n];
+        
         No n0 = new No(0, "no zero", "zero");
         No n2 = new No(2, "no dois", "dois");
         No n5 = new No(5, "no cinco", "cinco");
@@ -20,8 +20,9 @@ public class App {
         No n7 = new No(7, "no sete", "sete");
         No n1 = new No(1, "no um", "um");
 
-        // Inicializacao da lista
+        // Inicializacao da lista L
 
+        No[] l = new No[n];
         l[0] = n0;
         l[1] = n1;
         l[2] = n2;
@@ -33,11 +34,7 @@ public class App {
         l[8] = n8;
         l[9] = n9;
 
-        // Execucao do algoritmo
-
-       
-        int resultBusca1 = listaMethods.busca1(x, l);
-
+        // inicializacao da lista L2
         No[] l2 = new No[n+1];
         l2[0] = n0;
         l2[1] = n6;
@@ -51,10 +48,29 @@ public class App {
         l2[9] = n2;
         l2[n] = new No(101, "Sentinela", "end N");
 
+        // inicializacao da lista Ordenada
+        No[] lOrd = new No[n+1];
+        lOrd[0] = n0;
+        lOrd[1] = n1;
+        lOrd[2] = n2;
+        lOrd[3] = n3;
+        lOrd[4] = n4;
+        lOrd[5] = n5;
+        lOrd[6] = n6;
+        lOrd[7] = n7;
+        lOrd[8] = n8;
+        lOrd[9] = n9;
+        lOrd[n] = new No(101, "Sentinela", "end N");
 
+        // Execucao do algoritmo
+
+       
+        int resultBusca1 = listaMethods.busca1(x, l);
         int resultBusca2 = listaMethods.busca2(4, l2, n);
+        int resultBuscaOrd = listaMethods.buscaOrd(9, lOrd, n);
 
         System.out.println(resultBusca1);
         System.out.println(resultBusca2);
+        System.out.println(resultBuscaOrd);
     }
 }
